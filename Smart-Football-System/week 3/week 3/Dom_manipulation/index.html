@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation Activity</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        #menu{
+            display:none;
+            border:1px solid black;
+            padding:10px;
+            width:200px;
+            margin-top:10px;
+        }
+
+        button{
+            margin:5px;
+        }
+
+        #preview{
+            border:1px solid gray;
+            padding:10px;
+            min-height:50px;
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="title">DOM Manipulation Demo</h1>
+
+    <!-- Dynamic Menu -->
+    <h2>Dynamic Menu</h2>
+    <button onclick="toggleMenu()">Show/Hide Menu</button>
+
+    <div id="menu">
+        <p>Home</p>
+        <p>About</p>
+        <p>Services</p>
+        <p>Contact</p>
+    </div>
+
+    <hr>
+
+    <!-- Interactive Buttons -->
+    <h2>Interactive Buttons</h2>
+
+    <button onclick="changeTitle()">Change Title</button>
+
+    <button onclick="changeColor()">Change Background</button>
+
+    <hr>
+
+    <!-- Live Text Preview -->
+    <h2>Live Text Preview System</h2>
+
+    <input type="text" id="textInput"
+           placeholder="Type something here">
+
+    <div id="preview">
+        Your text will appear here...
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
